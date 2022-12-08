@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main -rain block
- * return:0
+ * main - rain block
+ * Return: Always 0
  */
 int main(void)
 {
