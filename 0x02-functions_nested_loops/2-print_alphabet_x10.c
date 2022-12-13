@@ -3,7 +3,6 @@
 /**
  * print_alphabet - prints the alpha 10 times
  */
-
 void print_alphabet_x10(void)
 {
 	int ten;
