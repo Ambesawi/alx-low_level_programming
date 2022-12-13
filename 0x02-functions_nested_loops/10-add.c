@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - add two numbers
+ * add - add a and  b
  * @a: the first number
  * @b: the secondn number
  * Return value of of add is both a and b
