@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alpha 10 times
+ * print_alphabet_10 - Entry point
+ * description: print 10x
+ * Return: 0 (success)
  */
 void print_alphabet_x10(void)
 {
