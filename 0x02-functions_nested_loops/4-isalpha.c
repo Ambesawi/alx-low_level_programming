@@ -6,7 +6,7 @@
  *
  * Return: 1 if character is a letter, 0 otherwise
  */
-int _isalpha(int c)
+int _isalpha(int c)/* this is fot main met */
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
