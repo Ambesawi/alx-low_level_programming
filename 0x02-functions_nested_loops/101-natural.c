@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main -main block
- * Description: computer and printes the sum
+ * Description: computer and printes the sum of all the multiples of 5 or
  * 5 below 1024 (exclude), followed by a new line
  * Return: 0
  */
@@ -18,7 +18,7 @@ int main(void)
 			sum += c;
 		}
 
-		c++
+		c++;
 	}
 	printf("%i\n", sum);
 	return (0);
