@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		a = b + c;
-		printf("%lu", a);
+		printf("%i", a);
 
 		c = b;
 		b = a;
