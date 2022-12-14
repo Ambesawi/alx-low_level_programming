@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
 	int i = 0;
+	int a = 0, b = 1, next;
 
-	while (next < 50)
+	while (i < 50)
 	{
 		next = a + b;
 		a = b;
