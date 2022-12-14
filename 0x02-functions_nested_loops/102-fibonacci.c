@@ -7,21 +7,17 @@
 
 int main(void)
 {
-	int i = 0;
-	int a = 0, b = 1, next;
+	int sum = 0;
+	int a = 0, b = 1, next = 0;
 
-	while (i < 50)
+	while (next < 4000000)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%i", next);
-		if (i < 49)
-		{
-			printf(", ");
-		}
-		i++;
+		if (next % 2 == 0)
+			sum += next;
 	}
-	printf('\n');
+	printf("%i\n", sum);
 	return (0);
 }
