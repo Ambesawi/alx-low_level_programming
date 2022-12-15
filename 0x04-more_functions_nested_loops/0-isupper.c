@@ -6,7 +6,7 @@
  * Return: 1 if digit and 0 if anything else
  */
 
-int _isdigit(int c)
+int _isupper(int c)
 {
 	if (c >= '65' && c <= '90')
 	{
