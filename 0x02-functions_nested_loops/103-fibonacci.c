@@ -21,4 +21,7 @@ int main(void)
 		prev2Fib = prevFib;
 		prevFib = fib;
 	}
+
+	printf("%.0f\n", sum);
+	return (0);
 }
