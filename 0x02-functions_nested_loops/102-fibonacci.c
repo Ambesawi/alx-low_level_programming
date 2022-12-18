@@ -7,17 +7,15 @@
 int main(void)
 {
 	int i;
-	int a, b, c;
+	unsigned long fib, prevFib, prev2Fib;
 
-	b = 1, c  = 0;
-
+	prevFib = 1, prev2Fib = 0;
 	for (i = 0; i < 50; i++)
 	{
-		a = b + c;
-		printf("%i", a);
-
-		c = b;
-		b = a;
+		fib = prevFib + prev2Fib;
+		printf("%lu", fib);
+		prev2Fib = prevFib;
+		prevFib = fib;
 		if (i == 49)
 			printf("\n");
 		else
