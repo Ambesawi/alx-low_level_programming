@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: computer and prints even number <4,000,000
- * 5 below 1024 (exclude), followed by a new l
+ * main - Prints the sum of even-valued Fibonacci sequence
+ * terms not exceeding 4000000.
+ * Return: Always 0
  */
+
 int main(void)
 {
 	unsigned long fib, prevFib, prev2Fib;
