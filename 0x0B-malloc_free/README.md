@@ -1,0 +1,1 @@
+this is maloc 0x0B assignment 
