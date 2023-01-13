@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	len_b = _strlen(argv[2]);
 
 	for (i = 0; i < )
-	{
+
 		if (argc != 3)
 		{
 			printf("Error\n");
@@ -41,5 +41,5 @@ int main(int argc, char *argv[])
 
 		res = mul(a, b);
 		printf("%d", res);
-	}
+
 }
