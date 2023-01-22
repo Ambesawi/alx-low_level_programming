@@ -3,21 +3,33 @@
 #include <stdarg.h>
 
 /**
- * print_all - prints anything.
+ * print_all - prints anything
  * @format: a list of types of arguments passed to the function
  * Return: no return.
  */
+
 void print_all(const char * const format, ...)
 {
-	unsigned int i;
-	char *str;
-	/** const char t_arg[] = "cifs"; */
 	va_list list;
+	unsigned int i, j, n;
+	char *str;
+	const char t_arg[] = "cifs";
+
 	va_start(list, format);
-	
-	i = 0;
+
+	i = 0, n = 0;
 	while (format && format[i] != '\0')
 	{
+		j = 0;
+		while (t_arg[j])
+		{
+			if (format[i] == t_arg[j] && n)
+			{
+				printf(", ");
+				break;
+			}
+			j++;
+		}
 		switch (format[i])
 		{
 			case 'c':
@@ -30,8 +42,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double)), n++;
 				break;
 			case 's':
-				str = va_arg(list, char *);
-				break;
+				str = va_arg(list, char *), n++;
 				if (!str)
 				{
 					printf("(nil)");
@@ -39,13 +50,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", str);
 				break;
-			default:
-				i++;
-				continue;
 		}
-		if (format[i + 1] != '\0')
-			printf(", ");
-
 		i++;
 	}
 	printf("\n");
