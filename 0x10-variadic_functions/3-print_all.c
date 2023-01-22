@@ -9,14 +9,13 @@
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j, n;
+	unsigned int i;
 	char *str;
-	const char t_arg[] = "cifs";
+	/** const char t_arg[] = "cifs"; */
 	va_list list;
-	
 	va_start(list, format);
 	
-	i = 0, n = 0;
+	i = 0;
 	while (format && format[i] != '\0')
 	{
 		switch (format[i])
@@ -31,7 +30,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double)), n++;
 				break;
 			case 's':
-				str = va_arg(list, char *), n++;
+				str = va_arg(list, char *);
 				break;
 				if (!str)
 				{
