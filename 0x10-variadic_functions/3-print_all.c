@@ -9,15 +9,15 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list list;
 	unsigned int i, j, n;
 	char *str;
 	const char t_arg[] = "cifs";
+	va_list list;
 	
 	va_start(list, format);
 	
 	i = 0, n = 0;
-	while (format && format[i])
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (t_arg[j])
