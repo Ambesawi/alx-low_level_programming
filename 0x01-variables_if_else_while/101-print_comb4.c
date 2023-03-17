@@ -5,30 +5,38 @@
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundres = '0';
+	int c;
+	int d;
+	int e = 0;
 
-	for (hundres = '0'; hundres <= '9'; hundres++)
+	while (e < 10)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		d = 0;
+		while (d < 10)
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			c = 0;
+			while (c < 10)
 			{
-				if (!((ones == tens) || (tens == hundres) || (tens > ones) || (hundres > tens)))
+				if (c != d && d != e && e < d && d < c)
 				{
-					putchar(hundres);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundres == '7' && tens == '8'))
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
+
+					if (c + d + e != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
+
+				c++;
 			}
+			d++;
 		}
+		e++;
 	}
 	putchar('\n');
 	return (0);
 }
+
