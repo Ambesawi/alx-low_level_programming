@@ -33,7 +33,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 /**
  * make_shash_node - makes a node for the sorted hash_table
  * @key: key for the data
- * @value: data to be stored by the Hash
+ * @value: data to be stored
  * Return: pointer to the new node, or NULL on failure
  */
 
@@ -62,7 +62,7 @@ shash_node_t *make_shash_node(const char *key, const char *value)
 }
 
 /**
- * add_to_sorted_list - add a node to the sorted (by key's ASCII) linked_list
+ * add_to_sorted_list - add a node to the sorted (by ASCII) linked_list
  * @table: the sorted hash_table
  * @node: the node to add
  * Return: void
@@ -105,7 +105,6 @@ void add_to_sorted_list(shash_table_t *table, shash_node_t *node)
  * @value: data to add
  * Return: 1 on success, 0 otherwise
  */
-
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -143,8 +142,9 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * shash_table_get - retrieve a value from the hash_table
  * @ht: hash_table
  * @key: key to the data
- * Return: the value associated with key, or NULL on failure
+ * Return: the value associated with key, / NULL on failure
  */
+
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int index;
@@ -169,6 +169,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
  * @ht: hash_table to print
  * Return: void
  */
+
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
@@ -190,10 +191,11 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
- * shash_table_print_rev - prints a sorted hash table in reverse
+ * shash_table_print_rev - prints a sorted hash_table in reverse
  * @ht: hash_table to print
  * Return: void
  */
+
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
@@ -219,6 +221,7 @@ void shash_table_print_rev(const shash_table_t *ht)
  * @ht: hash_table to delete
  * Return: void
  */
+
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int i;
