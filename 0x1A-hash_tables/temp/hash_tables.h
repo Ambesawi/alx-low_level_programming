@@ -1,15 +1,13 @@
-#ifndef _HASH_TABLES_H_
-#define _HASH_TABLES_H_
+#ifndef H_TABLE
+#define H_TABLE
 
-
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 /**
- * struct hash_node_s - Node of a hash_table
- * @key: The key, string
- * The key is unique in the HashTable
+ * struct hash_node_s - Node of a hash table first one
+ * @key: The key, in string The key is unique in the HashTable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
@@ -21,11 +19,12 @@ typedef struct hash_node_s
 } hash_node_t;
 
 /**
- * struct hash_table_s - Hash_table data structure
- * @size: The size of the array
+ * struct hash_table_s - Hash table data structure second
+ * @size: The size of the array in the node
  * @array: An array of size @size
+ * Each cell of this array is a pointer to the first node of a linked list,
+ * because we want our HashTable to use a Chaining collision handling
  */
-
 typedef struct hash_table_s
 {
 	unsigned long int size;
