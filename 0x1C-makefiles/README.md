@@ -2,41 +2,47 @@
 
 ## Description
 
-This project explores the use of Makefiles in C programming. It covers topics such as what make and Makefiles are, when and why to use Makefiles, rules (both explicit and implicit), common and useful rules, and the use of variables in Makefiles.
+This project explores the use of Makefiles in C programming. Makefiles are essential for automating the build process of a project. This project covers the basics of make, Makefiles, rules, variables, and their applications in C programming.
 
 ## Learning Objectives
 
 By the end of this project, you should be able to:
 
 - Explain the concepts of make and Makefiles.
-- Understand when, why, and how to use Makefiles in C programming.
-- Define rules in Makefiles and understand explicit and implicit rules.
+- Understand when, why, and how to use Makefiles in C projects.
+- Define rules in a Makefile and use them effectively.
+- Differentiate between explicit and implicit rules.
 - Identify common and useful rules in Makefiles.
-- Work with variables in Makefiles.
+- Set and use variables in Makefiles.
 
 ## Project Requirements
 
-- Allowed editors: vi, vim, emacs.
+- Use allowed editors: vi, vim, emacs.
 - Operating System: Ubuntu 20.04 LTS.
 - Version of gcc: 9.3.0.
 - Version of make: GNU Make 4.2.1.
-- All files should end with a new line.
-- A `README.md` file at the root of the project folder is mandatory.
+- End all files with a new line.
+- Include a mandatory `README.md` file at the root of the project folder.
 
-## Files
+## Project Structure
+- ├── 0-Makefile
+- ├── 1-Makefile
+- ├── 2-Makefile
+- ├── 3-Makefile
+- ├── 4-Makefile
+- ├── 5-island_perimeter.py
+- ├── README.md
+- └── ... (other project files)
 
-In the following tasks, we are going to use specific files. The goal is to compile these files only.
+## How to Use
 
-## How to Compile
-
-To compile the files in this project, use the make utility. For example:
-
-```bash
-$ make
+- Each task includes a specific Makefile (e.g., `0-Makefile`, `1-Makefile`, etc.).
+- Run the respective Makefile to compile the associated C program.
+- View the generated executable and test its functionality.
 
 ## Author
 
-[Aman Brhane]
+[Aman  Brhane ]
 
 ## License
 
